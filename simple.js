@@ -12,3 +12,10 @@ import ('./calces6module.mjs').then(
         console.log(es.Multiply(10,3))
     }
 )
+
+async function divide(){
+    const es6module = await import('./calces6module.mjs')
+    const result = await es6module.Division(100,5)
+    console.log("division result" +result)
+}
+divide()
